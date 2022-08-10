@@ -1,0 +1,266 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #f4f3fb;
+  --dark: #84899c;
+  --color1: #9172da;
+  --primary: #735fcd;
+  --secondary: #aa87e3;
+  --color2: #bfa1ea;
+  --maxtextwidth: 300px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+.item {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  padding-right: 3rem;
+}
+
+.item:first-child {
+  margin-top: 1rem;
+}
+
+.item > * {
+  font-weight: lighter;
+}
+
+.icon {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.item h3,
+.item p {
+  max-width: var(--maxtextwidth);
+}
+
+.title {
+  color: #666;
+}
+
+.inputContainer {
+  margin-top: 3.5rem;
+}
+
+.inputContainer label {
+  display: block;
+  font-weight: bold;
+  margin: 0.2rem 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.inputContainer input {
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.inputContainer input:focus {
+  border: 1px solid var(--secondary);
+}
+
+.checkBoxContainer {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.checkBoxContainer input {
+  display: none;
+}
+
+.checkBoxContainer .customCheckBox {
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin: 0 15px 0 0;
+  order: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.checkBoxContainer label:hover + .customCheckBox,
+.customCheckBox:hover {
+  border: 1px solid var(--secondary);
+}
+
+.checkBoxContainer input:checked ~ .customCheckBox {
+  background: var(--primary);
+}
+
+.checkBoxContainer input:checked ~ .customCheckBox > i {
+  color: #fff;
+  opacity: 1;
+}
+
+.checkBoxContainer input:not(:checked) ~ .customCheckBox > i {
+  opacity: 0;
+}
+
+.checkBoxContainer label {
+  user-select: none;
+  display: block;
+  flex-basis: 90%;
+  cursor: pointer;
+  order: 2;
+}
+
+.buttonContainer {
+  margin: 1.5rem 0;
+}
+
+.buttonContainer button {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.buttonContainer button:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.buttonContainer button:active {
+  transform: translate(0, 0px);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.alreadyRegistered a {
+  color: var(--dark);
+  text-decoration: none;
+}
+.alreadyRegistered a:hover {
+  color: var(--color2);
+}
+
+/* Main Layout */
+
+.main {
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 1px 10px 3px rgba(0, 0, 0, 0.1);
+  padding: 5rem;
+  overflow: hidden;
+  display: flex;
+  max-width: 50vw;
+}
+
+.transitionTransform {
+  transition: transform 0.5s ease;
+}
+
+.registerPage {
+  display: flex;
+  min-width: 100%;
+  position: relative;
+}
+
+.signInPage {
+  color: var(--dark);
+  padding: 5rem;
+  min-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.signIn {
+  padding: 0 10rem;
+  flex-basis: 100%;
+}
+
+.side {
+  background: linear-gradient(var(--secondary) 0%, var(--primary) 100%);
+  border-radius: 5px 0 0 5px;
+  flex-basis: 40%;
+  padding: 5rem;
+  color: #fff;
+}
+
+.register {
+  flex-basis: 60%;
+  padding: 7rem;
+  color: var(--dark);
+}
+
+.changePage {
+  transform: translate(calc(-100% - 5rem), 0);
+}
+
+/* Responsive MediaQuery */
+
+@media only screen and (max-width: 1600px) {
+  .main {
+    max-width: 80vw;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    max-width: 100vw;
+    padding: 0;
+    margin: 0 1.5rem;
+  }
+  .register {
+    flex-basis: 100%;
+  }
+  .signInPage {
+    margin-left: 5rem;
+    padding: 5rem;
+  }
+  .signIn {
+    padding: 0;
+  }
+  .side {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .register,
+  .signInPage {
+    padding: 2rem;
+  }
+}

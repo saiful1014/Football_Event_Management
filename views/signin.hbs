@@ -1,0 +1,54 @@
+<body><div class="main">
+    <div class="registerPage">
+      <div class="side">
+        <div class="item">
+          <div class="icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </div>
+          <h3>TO HOST A TOURNAMENT</h3>
+          <p>Take permission from Proctor Sir to host a tournament.</p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </div>
+          <h3>TO REGISTER FOR A TOURNAMENT</h3>
+          <p>sign_In with the username and password which provided by SIR</p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </div>
+          <h3>REGISTER INFORMATION</h3>
+          <p>provide all information </p>
+        </div>
+      </div>
+      <div class="register">
+        <h1 class="title">Register for tournament</h1>
+        <form id="form_register" method="post" action="/sign">
+          <div class="inputContainer">
+            <label for="email_register">Email(student)</label>
+            <input id="email_register" placeholder="Enter your email address" type="email" required />
+          </div>
+          <div class="inputContainer">
+            <label for="fullname_register">User name</label>
+            <input id="fullname_register" placeholder="Enter your full name" type="text" required />
+          </div>
+          <div class="inputContainer">
+            <label for="password_register">Password</label>
+            <input id="password_register" placeholder="Enter a password" type="password" required minlength="7" />
+          </div>
+  
+          <div class="checkBoxContainer">
+            <input type="checkbox" name="allowupdates" id="allowupdates_register" />
+            <label for="allowupdates_register">I am the host of this tournament and will follow all terms and conditions</label>
+            <span class="customCheckBox"><i class="fa fa-check" aria-hidden="true"></i></span>
+          </div>
+  
+          <div class="buttonContainer">
+            <button type="submit">sign In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </body>
