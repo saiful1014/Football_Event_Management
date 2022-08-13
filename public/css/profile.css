@@ -1,7 +1,7 @@
 /* CSS design by @jofpin */
 
 body {
-    background: #fffcdd;
+    background: #8ba380;
     padding: 2.23em;
   }
   
@@ -16,7 +16,8 @@ body {
   
   .user-profile {
     margin: auto;
-      width: 45em; 
+    margin-top: 100px;
+    width: 45em; 
     height: 27em;
     background: #fff;
     border-radius: .3em;
@@ -108,3 +109,38 @@ body {
     text-decoration: none;
     color: #ea4c89;
   }
+
+
+  /* navbar */
+
+  #navbar
+{
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #12c3c3;
+    display: grid;
+    place-items: center;
+}
+#navbar ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul li
+{
+    font-size: 20px;
+    margin: 0 45px;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    color: #000;
+}
+#navbar ul li a:hover
+{
+    color: #165397;
+}

@@ -1,15 +1,22 @@
 const express=require('express');
+const multer=require("multer");
 const router=express.Router();
-console.log("Allrouter");
+const upload=multer({storage:multer.memoryStorage()});
+//console.log(upload);
 const controller=require("../controller");
-router.get('/sign',controller.signin);
+router.get('/sign', controller.signin);
+router.get('/blog',controller.blog);
 router.get('/',controller.intro);
+router.get('/event',controller.event);
 router.post('/',controller.search);
 router.get('/welcome',controller.welcome);
 router.get('/seasonPage',controller.season);
 router.get('/teampage/:name',controller.team);
 router.get('/:Reg',controller.profile);
 router.post('/sign',controller.signincheck);
-
+router.get('/tournament/:tournamentname',controller.tournament);
+router.post('/aftersign',upload.single('image'),controller.uploadtournament);
+router.post('/hostupdate',controller.hostupdate);
+router.get('/matchupdate/:tournament',controller.fixture);
 
 module.exports=router;

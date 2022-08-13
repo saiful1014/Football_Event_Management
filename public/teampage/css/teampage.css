@@ -1,0 +1,123 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bdy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    border: thin double white ;
+    border-radius: 1%;
+}
+h2{
+    color: blue;
+}
+
+.title1{
+    background-color: rgb(231, 236, 239);
+    width: 99%;
+    border-radius: 1%;
+    border: thin double black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+    color: rgb(2, 35, 3);
+}
+#info{
+    width: 99%;
+    height: 200px;
+    background-color: rgb(236, 242, 244);
+    display: flex;
+    flex-direction: row;
+}
+.Bgroud1{
+
+    width: 80%;
+    margin: 10px;
+    background: #fff;
+    color: rgb(2, 2, 2);
+    border: thick solid black;
+    border-radius: 2%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; 
+}
+figure{
+    float: left;
+    width: 150px;
+    height: 180px;
+    display: block;
+    -webkit-transform: perspective(500);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: .5s;
+}
+figure:hover {
+    -webkit-transform: perspective(500) rotateX(90deg) translateY(-3em) translateZ(3em);
+}
+
+img{
+    display: block;
+    background-color: black;
+    box-shadow: 0px 20px 15px -10px hsla(0,0%,0%,.25);
+    height: 100%;
+    -webkit-transition:.5s;
+    width: 150px;
+    
+}
+
+figure:hover img{
+    box-shadow: none;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    padding: 1.5em;
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: 100% 0;
+    -webkit-transition: .5s;
+    
+    width: 150px;
+}
+figure:hover figcaption {
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+}
+h3 {
+    font-weight: bold;
+}
+
+#details1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+#foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(11, 11, 11);
+    width: 99%;
+
+}
+#foot div{
+    display: block;
+    width: 33%;
+    background-color: azure;
+}
+h4{
+    margin-left: 20px;
+}

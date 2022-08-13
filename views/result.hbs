@@ -1,0 +1,141 @@
+<body>
+
+       <div id="navbar">
+            <ul>
+                <li><a href="welcome">Home</a></li>
+                <li><a href="seasonPage">Department</a></li>
+                 <li><a href="#">NEWS</a></li>
+                <li><a href="event">EVENT</a></li>
+                <li><a href="sign">Sign In</a></li>
+        
+        </div>
+    <div class="container">
+        <div class="main-div">
+            <h1 class="title" style="text-transform:uppercase;">{{name}} TOURNAMENT</h1>
+            <div class="player-info">
+                    <div class="team-name">
+                        <h2>SCORE_CARD</h2>
+                    </div>
+                    <div class="player-data">
+                        <table>
+                            <tr>
+                                <th>DATE</th>
+                                <th>TEAM 1</th>
+                                <th>Score TEAM1</th>
+                                <th>Score TEAM2</th>
+                                <th>TEAM2</th>
+                            </tr>
+                            {{#each result}}
+                            <tr>
+                                <td><h3>{{this.match_date}}</h3></td>
+                                <td>{{this.TEAM1}}</td>
+                                <td>{{this.score_team1}}</td>
+                                <td>{{this.score_team2}}</td>
+                                <td>{{this.TEAM2}}</td>
+
+                            </tr>
+                            {{/each}}
+                            <!--<tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr>
+                            <tr>
+                                <td><h3>date1</h3></td>
+                                <td>team1</td>
+                                <td>score team1</td>
+                                <td>score team2</td>
+                                <td>team2</td>
+                            </tr> -->
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>

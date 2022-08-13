@@ -28,15 +28,15 @@
         <form id="form_register" method="post" action="/sign">
           <div class="inputContainer">
             <label for="email_register">Email(student)</label>
-            <input id="email_register" placeholder="Enter your email address" type="email" required />
+            <input id="email_register" placeholder="Enter your email address" name="email" type="email" required />
           </div>
           <div class="inputContainer">
             <label for="fullname_register">User name</label>
-            <input id="fullname_register" placeholder="Enter your full name" type="text" required />
+            <input id="fullname_register" placeholder="Enter your full name" name="username" type="text" required />
           </div>
           <div class="inputContainer">
             <label for="password_register">Password</label>
-            <input id="password_register" placeholder="Enter a password" type="password" required minlength="7" />
+            <input id="password_register" placeholder="Enter a password" name="password" type="password" required minlength="7" />
           </div>
   
           <div class="checkBoxContainer">
@@ -49,6 +49,13 @@
             <button type="submit">sign In</button>
           </div>
         </form>
+        {{#if alert}}
+           <div class="alert alert-danger" role="alert">
+         {{alert}}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+           </div>
+        {{/if}}
+
       </div>
     </div>
     </body>

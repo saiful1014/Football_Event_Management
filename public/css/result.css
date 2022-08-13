@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 3rem; */
+    background-color:#080808;
+}
+.main-div{
+    background-color: #bcdcf4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding-top: 3rem;
+    /* margin-top: 5rem; */
+    margin-bottom: 5rem;
+    
+}
+.title{
+    margin-bottom: 1rem;
+    color: green;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.player-info{
+    border: 2px solid rgb(238, 234, 234);
+    border-radius: 2rem;
+    width: 75rem;
+    /* height: 50rem; */
+    padding-top: 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.team-name{
+    /* background-color: aqua; */
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.player-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+th{
+    font-size: 1.5rem;
+    background-color:#0172B9;
+    color: #FFFFFF;
+    height: 3rem;
+
+}
+th,td{
+    border: 2px solid black;
+}
+td{
+    height: 2rem;
+
+}
+
+
+
+
+  /* navbar */
+
+  #navbar
+{
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #12c3c3;
+    display: grid;
+    place-items: center;
+}
+#navbar ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul li
+{
+    font-size: 20px;
+    margin: 0 45px;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    color: #000;
+}
+#navbar ul li a:hover
+{
+    color: #165397;
+}

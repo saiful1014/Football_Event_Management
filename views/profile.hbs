@@ -1,8 +1,17 @@
 <body>
-  <a href="/welcome"><h3>Home</h3></a>
+   <div id="navbar">
+            <ul>
+                <li><a href="welcome">Home</a></li>
+                <li><a href="seasonPage">Department</a></li>
+                 <li><a href="#">NEWS</a></li>
+                <li><a href="event">EVENT</a></li>
+                <li><a href="sign">Sign In</a></li>
+        
+        </div>
+  
     {{#each result}}
 
- <h1 class="title-pen"> Player Profile  Of <span>{{this.name}}</span></h1>
+ <!--  <h1 class="title-pen"> Player Profile  Of <span>{{this.name}}</span></h1>  -->
 <div class="user-profile">
 	<img class="avatar" alt="Embedded Image" src="data:image/jpg;base64,{{this.image}}">
     <div class="username">{{this.name}}</div>

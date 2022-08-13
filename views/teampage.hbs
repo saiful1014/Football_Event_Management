@@ -37,6 +37,7 @@ img {
     display: block;
     height: 100%;
     -webkit-transition: .5s;
+    width: 150px;
 }
 figure:hover img {
     box-shadow: none;
@@ -48,23 +49,68 @@ figcaption {
     -webkit-transform: rotateX(-90deg);
     -webkit-transform-origin: 100% 0;
     -webkit-transition: .5s;
+    width: 150px;
 }
 figure:hover figcaption {
     box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
 }
 h3 {
     font-weight: bold;
+}
+
+  /* navbar */
+
+  #navbar
+{
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #12c3c3;
+    display: grid;
+    place-items: center;
+}
+#navbar ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul li
+{
+    font-size: 20px;
+    margin: 0 45px;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    color: #000;
+}
+#navbar ul li a:hover
+{
+    color: #165397;
 }​
 
   </style>
 </head>
 <body>
 
+       <div id="navbar">
+            <ul>
+                <li><a href="welcome">Home</a></li>
+                <li><a href="seasonPage">Department</a></li>
+                 <li><a href="#">NEWS</a></li>
+                <li><a href="event">EVENT</a></li>
+                <li><a href="sign">Sign In</a></li>
+        
+        </div>
+
   <a href="/welcome"><h3>Home</h3></a>
     {{#each result}}
     <a href="/{{this.Reg}}" class="box">
   <figure>
-    <img src="data:image/jpg;base64,{{this.image}}" >
+    <img src="data:image/jpg;base64,{{this.image}}">
     <figcaption>
         <h3>{{this.name}}</h3>
         <p>{{this.position}}</p>

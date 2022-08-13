@@ -1,0 +1,87 @@
+<body>
+
+    <div class="title1">
+         <h1>
+                {{TEAM}}
+        </h1>
+         <h3>
+            "BORN TO WIN"
+         </h3>    
+    </div> 
+    <div id="info">
+        <h3>
+            <u>
+                HISTORY:
+            </u>
+        </h3>
+        <p>
+
+        </p>
+
+    </div>
+    <div class="bdy">
+        <h2>
+            PLAYERS
+        </h2>
+    <div class="Bgroud1">
+       
+        <div id="details1">
+            {{#each result}}
+            
+    <a href="/{{this.Reg}}" class="box">
+  <figure>
+    <img src="data:image/jpg;base64,{{this.image}}" >
+    <figcaption>
+        <h3>{{this.name}}</h3>
+        <p>{{this.position}}</p>
+    </figcaption>
+</figure>
+</a>
+
+
+{{/each}}
+
+</div>
+        
+    </div>
+    </div>
+    <div id="team">
+        <h3>
+            <u>
+                TEAM
+            </u>
+        </h3>
+    </div>
+    <footer id="foot">
+        <div>
+            <h4>Management</h4>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+        <div>
+            <h4>Goals</h4>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+        <div>
+            <h4>Achievement</h4>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </footer>
+</body>
